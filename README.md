@@ -1,4 +1,5 @@
 # custom datadog checks
+![build status](https://github.com/fabianponce/datadog-checks/actions/workflows/python-package.yml/badge.svg)
 
 ## aws subnet ip utilization
 * `aws.ec2.subnet.available_addresses`: number of ips free
