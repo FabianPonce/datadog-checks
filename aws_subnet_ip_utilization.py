@@ -19,7 +19,7 @@ def tag_value(s: str) -> str:
     return s
 
 def subnet_aws_tags(subnet):
-        tags = [ f"{tag_value(d['Key'])}:{tag_value(d['Value'])}" for d in subnet.tags ]
+        return [ f"{tag_value(d['Key'])}:{tag_value(d['Value'])}" for d in subnet.tags ]
 
 class AWSSubnetIPUtilizationCheck(AgentCheck):
     def __init__(self, name, init_config, agentConfig, instances=None):
